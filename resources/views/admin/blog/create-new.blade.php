@@ -41,12 +41,12 @@
                     </select><label for="floatingSelectTeam">Team </label></div>
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4">
                   <textarea>
-     Welcome to TinyMCE!
-  </textarea>
+                 Welcome to TinyMCE!
+                     </textarea>
                 </div>
-                
+
                 <div class="col-sm-6 col-md-4">
                   <div class="form-floating"><select class="form-select" id="floatingSelectAssignees">
                       <option selected="selected">Select assignees </option>
