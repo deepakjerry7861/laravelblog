@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  
+<!-- Mirrored from prium.github.io/phoenix/v1.3.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2022 11:55:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Phoenix</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
+    <link href="assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <link href="vendors/leaflet/leaflet.css" rel="stylesheet">
+    <link href="vendors/leaflet.markercluster/MarkerCluster.css" rel="stylesheet">
+    <link href="vendors/leaflet.markercluster/MarkerCluster.Default.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="container-fluid px-0" data-layout="container">
+        <nav class="navbar navbar-light navbar-vertical navbar-vibrant navbar-expand-lg">
+          <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+            <div class="navbar-vertical-content scrollbar">
+              <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+                <li class="nav-item">
+                  <!-- parent pages--><a class="nav-link dropdown-indicator" href="#dashboard" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dashboard">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="cast"></span></span><span class="nav-link-text">Dashboard</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent show" id="dashboard">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">E commerce</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard/project-management.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Project management</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- label-->
+                  <p class="navbar-vertical-label">Apps</p><!-- parent pages--><a class="nav-link dropdown-indicator" href="#e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-commerce">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="shopping-cart"></span></span><span class="nav-link-text">E commerce</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="e-commerce">
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#admin" data-bs-toggle="collapse" aria-expanded="true" aria-controls="e-commerce">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Admin</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent show" id="admin">
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/add-product.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Add product</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/products.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Products</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/customers.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Customers</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/customer-details.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Customer details</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/orders.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Orders</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/order-details.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Order details</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/refund.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Refund</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#landing" data-bs-toggle="collapse" aria-expanded="true" aria-controls="e-commerce">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Landing</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent show" id="landing">
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/homepage.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Homepage</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/product-details.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Product details</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/products-filter.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Products filter</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/cart.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Cart</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/checkout.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Checkout</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/shipping-info.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Shipping info</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/profile.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Profile</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/favourite-stores.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Favourite stores</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/wishlist.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Wishlist</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/invoice.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Invoice</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="project-management">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="clipboard"></span></span><span class="nav-link-text">Project management</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="project-management">
+                    <li class="nav-item"><a class="nav-link" href="apps/project-management/create-new.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Create new</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="apps/project-management/project-list-view.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Project list view</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Project card view</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Todo list</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- label-->
+                  <p class="navbar-vertical-label">Pages</p><!-- parent pages--><a class="nav-link" href="pages/starter.html" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="compass"></span></span><span class="nav-link-text">Starter</span></div>
+                  </a><!-- parent pages--><a class="nav-link dropdown-indicator" href="#pages" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pages">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="layout"></span></span><span class="nav-link-text">Pages</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="pages">
+                    <li class="nav-item"><a class="nav-link" href="pages/pages/faq.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Faq</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/pages/pricing.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Pricing</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/pages/notifications.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Notifications</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/pages/members.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Members</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#errors" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="errors">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="alert-triangle"></span></span><span class="nav-link-text">Errors</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="errors">
+                    <li class="nav-item"><a class="nav-link" href="pages/errors/404.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">404</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/errors/500.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">500</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#authentication" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="authentication">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="lock"></span></span><span class="nav-link-text">Authentication</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="authentication">
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/sign-in.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Sign in</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/sign-up.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Sign up</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/sign-out.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Sign out</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/forgot-password.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Forgot password</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/reset-password.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Reset password</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/authentication/simple/lock-screen.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Lock screen</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- label-->
+                  <p class="navbar-vertical-label">Modules</p><!-- parent pages--><a class="nav-link dropdown-indicator" href="#forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="forms">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="file-text"></span></span><span class="nav-link-text">Forms</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="forms">
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#basic" data-bs-toggle="collapse" aria-expanded="false" aria-controls="forms">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Basic</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="basic">
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/form-control.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Form control</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/input-group.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Input group</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/select.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Select</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/checks.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Checks</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/range.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Range</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/floating-labels.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Floating labels</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/basic/layout.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Layout</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#advance" data-bs-toggle="collapse" aria-expanded="false" aria-controls="forms">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Advance</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="advance">
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/advance/advance-select.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Advance select</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/advance/date-picker.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Date picker</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/advance/editor.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Editor</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/advance/file-uploader.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">File uploader</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/forms/advance/rating.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Rating</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#icons" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="icons">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="grid"></span></span><span class="nav-link-text">Icons</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="icons">
+                    <li class="nav-item"><a class="nav-link" href="modules/icons/feather.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Feather</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/icons/font-awesome.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Font awesome</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/icons/unicons.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Unicons</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#tables" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="tables">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="columns"></span></span><span class="nav-link-text">Tables</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="tables">
+                    <li class="nav-item"><a class="nav-link" href="modules/tables/basic-tables.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Basic tables</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/tables/advance-tables.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Advance tables</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#components" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="components">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="package"></span></span><span class="nav-link-text">Components</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="components">
+                    <li class="nav-item"><a class="nav-link" href="modules/components/accordion.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Accordion</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/avatar.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Avatar</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/alerts.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Alerts</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/badge.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Badge</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/breadcrumb.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Breadcrumb</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/button.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Buttons</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/card.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Card</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#carousel" data-bs-toggle="collapse" aria-expanded="false" aria-controls="components">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Carousel</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="carousel">
+                        <li class="nav-item"><a class="nav-link" href="modules/components/carousel/bootstrap.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Bootstrap</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/components/carousel/swiper.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Swiper</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/collapse.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Collapse</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/dropdown.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Dropdown</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/list-group.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">List group</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/modal.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Modals</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#navs-_and_-Tabs" data-bs-toggle="collapse" aria-expanded="false" aria-controls="components">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Navs &amp; Tabs</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="navs-_and_-Tabs">
+                        <li class="nav-item"><a class="nav-link" href="modules/components/navs-and-tabs/navs.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Navs</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/components/navs-and-tabs/navbar.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Navbar</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="modules/components/navs-and-tabs/tabs.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Tabs</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/offcanvas.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Offcanvas</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/progress-bar.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Progress bar</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/placeholder.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Placeholder</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/pagination.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Pagination</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/popovers.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Popovers</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/scrollspy.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Scrollspy</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/spinners.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Spinners</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/toast.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Toast</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/components/tooltips.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Tooltips</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#utilities" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="utilities">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="tool"></span></span><span class="nav-link-text">Utilities</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="utilities">
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/background.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Background</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/borders.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Borders</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/colors.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Colors</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/display.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Display</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/flex.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Flex</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/float.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Float</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/interactions.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Interactions</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/opacity.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Opacity</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/overflow.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Overflow</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/position.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Position</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/shadows.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Shadows</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/sizing.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Sizing</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/spacing.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Spacing</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/typography.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Typography</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/vertical-align.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Vertical align</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="modules/utilities/visibility.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Visibility</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link dropdown-indicator" href="#multi-level" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="multi-level">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="layers"></span></span><span class="nav-link-text">Multi level</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="multi-level">
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#level-two" data-bs-toggle="collapse" aria-expanded="false" aria-controls="multi-level">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Level two</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="level-two">
+                        <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Item 1</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Item 2</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#level-three" data-bs-toggle="collapse" aria-expanded="false" aria-controls="multi-level">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Level three</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="level-three">
+                        <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Item 3</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link dropdown-indicator" href="#item-4" data-bs-toggle="collapse" aria-expanded="false" aria-controls="level-three">
+                            <div class="d-flex align-items-center">
+                              <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Item 4</span>
+                            </div>
+                          </a><!-- more inner pages-->
+                          <ul class="nav collapse parent" id="item-4">
+                            <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Item 5</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Item 6</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#level-four" data-bs-toggle="collapse" aria-expanded="false" aria-controls="multi-level">
+                        <div class="d-flex align-items-center">
+                          <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Level four</span>
+                        </div>
+                      </a><!-- more inner pages-->
+                      <ul class="nav collapse parent" id="level-four">
+                        <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center"><span class="nav-link-text">Item 6</span></div>
+                          </a><!-- more inner pages-->
+                        </li>
+                        <li class="nav-item"><a class="nav-link dropdown-indicator" href="#item-7" data-bs-toggle="collapse" aria-expanded="false" aria-controls="level-four">
+                            <div class="d-flex align-items-center">
+                              <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Item 7</span>
+                            </div>
+                          </a><!-- more inner pages-->
+                          <ul class="nav collapse parent" id="item-7">
+                            <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text">Item 8</span></div>
+                              </a><!-- more inner pages-->
+                            </li>
+                            <li class="nav-item"><a class="nav-link dropdown-indicator" href="#item-9" data-bs-toggle="collapse" aria-expanded="false" aria-controls="item-7">
+                                <div class="d-flex align-items-center">
+                                  <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-text">Item 9</span>
+                                </div>
+                              </a><!-- more inner pages-->
+                              <ul class="nav collapse parent" id="item-9">
+                                <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                                    <div class="d-flex align-items-center"><span class="nav-link-text">Item 10</span></div>
+                                  </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#!.html" data-bs-toggle="" aria-expanded="false">
+                                    <div class="d-flex align-items-center"><span class="nav-link-text">Item 11</span></div>
+                                  </a><!-- more inner pages-->
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- label-->
+                  <p class="navbar-vertical-label">Documentation</p><!-- parent pages--><a class="nav-link" href="documentation/getting-started.html" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="life-buoy"></span></span><span class="nav-link-text">Getting started</span></div>
+                  </a><!-- parent pages--><a class="nav-link dropdown-indicator" href="#customization" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customization">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon d-flex flex-center"><span class="fas fa-caret-right fs-0"></span></div><span class="nav-link-icon"><span data-feather="settings"></span></span><span class="nav-link-text">Customization</span>
+                    </div>
+                  </a>
+                  <ul class="nav collapse parent" id="customization">
+                    <li class="nav-item"><a class="nav-link" href="documentation/customization/styling.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Styling</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/customization/plugin.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Plugin</span></div>
+                      </a><!-- more inner pages-->
+                    </li>
+                  </ul><!-- parent pages--><a class="nav-link" href="documentation/gulp.html" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon font-awesome"><span class="fa-brands fa-gulp fs-0 ms-1"></span></span><span class="nav-link-text">Gulp</span></div>
+                  </a><!-- parent pages--><a class="nav-link" href="documentation/design-file.html" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="figma"></span></span><span class="nav-link-text">Design file</span></div>
+                  </a><!-- parent pages--><a class="nav-link" href="changelog.html" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span data-feather="git-merge"></span></span><span class="nav-link-text">Changelog</span></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-vertical-footer"><a class="btn btn-link border-0 fw-semi-bold d-flex ps-0" href="pages/authentication/simple/sign-out.html"><span class="navbar-vertical-footer-icon" data-feather="log-out"></span><span>Sign out</span></a></div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-light navbar-top navbar-expand vertical-navbar">
+          <div class="navbar-logo">
+            <button class="btn navbar-toggler navbar-toggler-humburger-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+            <a class="navbar-brand me-1 me-sm-3" href="index.html">
+              <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center"><img src="assets/img/icons/logo.png" alt="phoenix" width="32" />
+                  <p class="logo-text ms-2 d-none d-sm-block">phoenix</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <div class="search-box d-none d-lg-block" style="width:25rem;">
+              <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search min-h-auto form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
+                <span class="fas fa-search search-box-icon"></span>
+              </form>
+            </div>
+            <ul class="navbar-nav navbar-nav-icons ms-auto flex-row">
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-700" data-feather="bell" style="height:20px;width:20px;"></span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link notification-indicator notification-indicator-primary" id="navbarDropdownSettings" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="text-700" data-feather="settings" style="height:20px;width:20px;"></span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDropdownNindeDots" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2" r="2" fill="#525b75"></circle>
+                    <circle cx="2" cy="8" r="2" fill="#525b75"></circle>
+                    <circle cx="2" cy="14" r="2" fill="#525b75"></circle>
+                    <circle cx="8" cy="8" r="2" fill="#525b75"></circle>
+                    <circle cx="8" cy="14" r="2" fill="#525b75"></circle>
+                    <circle cx="14" cy="8" r="2" fill="#525b75"></circle>
+                    <circle cx="14" cy="14" r="2" fill="#525b75"></circle>
+                    <circle cx="8" cy="2" r="2" fill="#525b75"></circle>
+                    <circle cx="14" cy="2" r="2" fill="#525b75"></circle>
+                  </svg></a>
+                <div class="dropdown-menu dropdown-menu-end py-0 dropdown-nide-dots shadow border border-300" aria-labelledby="navbarDropdownNindeDots">
+                  <div class="card bg-white position-relative border-0">
+                    <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
+                      <div class="row text-center align-items-center gx-0 gy-0">
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/behance.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Behance</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/google-cloud.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Cloud</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/slack.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Slack</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/github.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Github</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/bitbucket.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">BitBucket</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/google-drive.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Drive</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/trello.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Trello</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/figma.png" alt="" width="20" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Figma</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/twitter.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Twitter</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/pinterest.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Pinterest</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/linkedin.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Linkedin</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/google-maps.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Maps</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/google-photos.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Photos</p>
+                          </a></div>
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="assets/img/nav-icons/spotify.png" alt="" width="30" />
+                            <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Spotify</p>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link lh-1 px-0 ms-5" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar avatar-l ">
+                    <img class="rounded-circle" src="assets/img/team/57.png" alt="" />
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end py-0 dropdown-profile shadow border border-300" aria-labelledby="navbarDropdownUser">
+                  <div class="card bg-white position-relative border-0">
+                    <div class="card-body p-0">
+                      <div class="text-center pt-4 pb-3">
+                        <div class="avatar avatar-xl ">
+                          <img class="rounded-circle" src="assets/img/team/57.png" alt="" />
+                        </div>
+                        <h6 class="mt-2">Jerry Seinfield</h6>
+                      </div>
+                      <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
+                    </div>
+                    <div class="overflow-auto scrollbar" style="height: 10rem;">
+                      <ul class="nav d-flex flex-column mb-2 pb-1">
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="user"></span>Profile</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="pie-chart"></span>Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="lock"></span>Posts &amp; Activity</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="settings"></span>Settings &amp; Privacy </a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="help-circle"></span>Help Center</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="globe"></span>Language</a></li>
+                      </ul>
+                    </div>
+                    <div class="card-footer p-0 border-top">
+                      <ul class="nav d-flex flex-column my-3">
+                        <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="user-plus"></span>Add another account</a></li>
+                      </ul>
+                      <hr />
+                      <div class="px-3"> <a class="btn btn-phoenix-secondary d-flex flex-center w-100" href="#!"> <span class="me-2" data-feather="log-out"> </span>Sign out</a></div>
+                      <div class="my-2 text-center fw-bold fs--2 text-600"><a class="text-600 me-1" href="#!">Privacy policy</a>&bull;<a class="text-600 mx-1" href="#!">Terms</a>&bull;<a class="text-600 ms-1" href="#!">Cookies</a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="pb-5">
+            <div class="row g-4">
+              <div class="col-12 col-xxl-6">
+                <div class="mb-8">
+                  <h2 class="mb-2">Ecommerce Dashboard</h2>
+                  <h5 class="text-700 fw-semi-bold">Here’s what’s going on at your business right now</h5>
+                </div>
+                <div class="row align-items-center g-4">
+                  <div class="col-12 col-md-auto">
+                    <div class="d-flex align-items-center"><img src="assets/img/icons/illustrations/4.png" alt="" height="46" width="46" />
+                      <div class="ms-3">
+                        <h4 class="mb-0">57 new orders</h4>
+                        <p class="text-800 fs--1 mb-0">Awating processing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <div class="d-flex align-items-center"><img src="assets/img/icons/illustrations/2.png" alt="" height="46" width="46" />
+                      <div class="ms-3">
+                        <h4 class="mb-0">5 orders</h4>
+                        <p class="text-800 fs--1 mb-0">On hold</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                    <div class="d-flex align-items-center"><img src="assets/img/icons/illustrations/3.png" alt="" height="46" width="46" />
+                      <div class="ms-3">
+                        <h4 class="mb-0">15 products</h4>
+                        <p class="text-800 fs--1 mb-0">Out of stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="bg-200 mb-6 mt-4" />
+                <div class="row flex-between-center mb-4 g-3">
+                  <div class="col-auto">
+                    <h3>Total sells</h3>
+                    <p class="text-700 lh-sm mb-0">Payment received across all channels</p>
+                  </div>
+                  <div class="col-8 col-sm-4"><select class="form-select form-select-sm mt-2" id="select-gross-revenue-month">
+                      <option>Mar 1 - 31, 2022</option>
+                      <option>April 1 - 30, 2022</option>
+                      <option>May 1 - 31, 2022</option>
+                    </select></div>
+                </div>
+                <div class="echart-total-sales-chart" style="min-height:320px;width:100%"></div>
+              </div>
+              <div class="col-12 col-xxl-6">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h5 class="mb-1">Total orders<span class="badge badge-light-warning rounded-pill fs--1 ms-2">-6.8%</span></h5>
+                            <h6 class="text-700">Last 7 days</h6>
+                          </div>
+                          <h4>16,247</h4>
+                        </div>
+                        <div class="d-flex justify-content-center px-4 py-6">
+                          <div class="echart-total-orders" style="height:85px;width:115px" data-echarts='{"tooltip":{"show":false},"series":[{"type":"bar","barWidth":"5px","data":[120,200,150,80,70,110,120],"showBackground":true,"symbol":"none","itemStyle":{"borderRadius":10},"backgroundStyle":{"borderRadius":10}}],"grid":{"right":10,"left":10,"bottom":0,"top":0}}'></div>
+                        </div>
+                        <div class="mt-2">
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet-item bg-primary me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Completed</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">52%</h6>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="bullet-item bg-light-primary me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Pending payment</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">48%</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h5 class="mb-1">New customers<span class="badge badge-light-warning rounded-pill fs--1 ms-2">+26.5%</span></h5>
+                            <h6 class="text-700">Last 7 days</h6>
+                          </div>
+                          <h4>356</h4>
+                        </div>
+                        <div class="pb-0 pt-4">
+                          <div class="echarts-new-customers" style="height:180px;width:100%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h5 class="mb-2">Top coupons</h5>
+                            <h6 class="text-700">Last 7 days</h6>
+                          </div>
+                        </div>
+                        <div class="pb-4 pt-3">
+                          <div class="echart-top-coupons" style="height:115px;width:100%;"></div>
+                        </div>
+                        <div>
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet-item bg-primary me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Percentage discount</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">72%</h6>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet-item bg-primary-200 me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Fixed card discount</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">18%</h6>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="bullet-item bg-info me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Fixed product discount</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">10%</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h5 class="mb-2">Paying vs non paying</h5>
+                            <h6 class="text-700">Last 7 days</h6>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center pt-3">
+                          <div style="height:145px;width:140px"><canvas id="payingCustomerChart"></canvas></div>
+                        </div>
+                        <div class="mt-3">
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet-item bg-primary me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Paying customer</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">30%</h6>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="bullet-item bg-light-primary me-2"></div>
+                            <h6 class="text-900 fw-semi-bold flex-1 mb-0">Non-paying customer</h6>
+                            <h6 class="text-900 fw-semi-bold mb-0">70%</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-white pt-7 border-y border-300">
+            <div data-list='{"valueNames":["product","customer","rating","review","time"],"page":6}'>
+              <div class="row align-items-end justify-content-between pb-5 g-3">
+                <div class="col-auto">
+                  <h3>Latest reviews</h3>
+                  <p class="text-700 lh-sm mb-0">Payment received across all channels</p>
+                </div>
+                <div class="col-12 col-md-auto">
+                  <div class="row g-2 gy-3">
+                    <div class="col-auto flex-1">
+                      <div class="search-box">
+                        <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search form-control-sm" type="search" placeholder="Search" aria-label="Search" />
+                          <span class="fas fa-search search-box-icon"></span>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-auto"><button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100 me-1" type="button">All products</button><button class="btn btn-sm btn-phoenix-secondary bg-white hover-bg-100" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive mx-n1 px-1 scrollbar">
+                <table class="table fs--1 mb-0 border-top border-200">
+                  <thead>
+                    <tr>
+                      <th class="white-space-nowrap fs--1 ps-0 align-middle">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </th>
+                      <th class="sort white-space-nowrap align-middle" scope="col"></th>
+                      <th class="sort white-space-nowrap align-middle" scope="col" style="min-width:360px;" data-sort="product">PRODUCT</th>
+                      <th class="sort align-middle" scope="col" data-sort="customer" style="min-width:200px;">CUSTOMER</th>
+                      <th class="sort align-middle" scope="col" data-sort="rating" style="min-width:110px;">RATING</th>
+                      <th class="sort align-middle" scope="col" style="max-width:350px;" data-sort="review">REVIEW</th>
+                      <th class="sort text-start ps-5 align-middle" scope="col" data-sort="status">STATUS</th>
+                      <th class="sort text-end align-middle" scope="col" data-sort="time">TIME</th>
+                      <th class="sort text-end pe-0 align-middle" scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="list" id="table-latest-review-body">
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/1.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Fitbit Sense Advanced Smartwatch with Tools fo...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l">
+                            <div class="avatar-name rounded-circle"><span>R</span></div>
+                          </div>
+                          <h6 class="mb-0 ms-3 text-900">Richard Dawkins</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">This Fitbit is fantastic! I was trying to be in better shape and needed some motivation, so I decided to treat myself to a new Fitbit.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Just now</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/2.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">iPhone 13 pro max-Pacific Blue-128GB storage</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/59.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Ashley Garrett</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">The order was delivered ahead of schedule. To give us additional time, you should leave the packaging sealed with plastic.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Just now</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/3.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Apple MacBook Pro 13 inch-M1-8/256GB-space</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/58.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Woodrow Burton</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-alt star-icon text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">It's a Mac, after all. Once you've gone Mac, there's no going back. My first Mac lasted over nine years, and this is my second.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Just now</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/4.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Apple iMac 24&quot; 4K Retina Display M1 8 Core CPU...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/avatar-placeholder.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Eric McGee</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">Personally, I like the minimalist style, but I wouldn't choose it if I were searching for a computer that I would use frequently. It's...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 09, 3:23 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/5.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Razer Kraken v3 x Wired 7.1 Surroung Sound Gam...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/avatar-placeholder.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Kim Carroll</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">It performs exactly as expected. There are three of these in the family.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 09, 2:15 PM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/6.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">PlayStation 5 DualSense Wireless Controller</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/57.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Barbara Lucas</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">The controller is quite comfy for me. Despite its increased size, the controller still fits well in my hands.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 08, 8:53 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/7.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">2021 Apple 12.9-inch iPad Pro (Wi‑Fi, 128GB) -...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/3.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Ansolo Lazinatov</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-alt star-icon text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">The response time and service I received when contacted the designers were Phenomenal!</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 07, 9:00 PM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/8.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Amazon Basics Matte Black Wired Keyboard - US ...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/26.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Emma watson</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">I have started using this theme in the last week and it has really impressed me very much, the support is second to none.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 07, 11:20 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/9.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Amazon Basics Mesh, Mid-Back, Swivel Office De...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/29.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Rowen Atkinson</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">The best experience we could hope for. Customer service team is amazing and the quality of their products is unsurpassed. Great theme ...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 07, 2:00 PM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/10.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Apple Magic Mouse (Wireless, Rechargable) - Si...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l">
+                            <div class="avatar-name rounded-circle"><span>A</span></div>
+                          </div>
+                          <h6 class="mb-0 ms-3 text-900">Anthony Hopkins</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">This template has allowed me to convert my existing web app into a great looking, easy to use UI in less than 2 weeks. Very easy to us...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 06, 8:00 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/11.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Echo Dot (4th Gen) _ Smart speaker with Alexa ...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/8.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Jennifer Schramm</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-alt star-icon text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">The theme is really beautiful and the support answer very quickly and is friendly. Buy it, you will not regret it.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 05, 4:00 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/12.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">HORI Racing Wheel Apex for PlayStation 4_3, an...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/avatar-placeholder.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Raymond Mims</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">As others mentioned, the team behind this theme is super responsive. I sent a message during the weekend, fully expecting a response a...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 04, 6:53 PM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/13.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Nintendo Switch with Neon Blue and Neon Red Jo...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/9.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Michael Jenkins</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">I had a bit of a hard time at first but after I contacted the team they were able to help me set up the theme. It's really good and I ...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 04, 12:00 PM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/14.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Oculus Rift S PC-Powered VR Gaming Headset</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/avatar-placeholder.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Kristine Cadena</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">Excellent. All my doubts were answered by the team quickly. I highly recommend it.</p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-warning">Pending<span class="ms-2 fas fa-stopwatch"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 03, 8:53 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover-actions-trigger btn-reveal-trigger position-static">
+                      <td class="fs--1 align-middle ps-0">
+                        <div class="form-check mb-0 fs-0"><input class="form-check-input" type="checkbox" /></div>
+                      </td>
+                      <td class="align-middle product white-space-nowrap py-0"><img src="assets/img/products/15.png" alt="" width="53" /></td>
+                      <td class="align-middle product white-space-nowrap"><a class="fw-semi-bold" href="apps/e-commerce/landing/product-details.html">Sony X85J 75 Inch Sony 4K Ultra HD LED Smart G...</a></td>
+                      <td class="align-middle customer white-space-nowrap"><a class="d-flex align-items-center" href="#!">
+                          <div class="avatar avatar-l"><img class="rounded-circle" src="assets/img/team/24.png" alt="" /></div>
+                          <h6 class="mb-0 ms-3 text-900">Suzanne Martinez</h6>
+                        </a></td>
+                      <td class="align-middle rating white-space-nowrap fs--2"><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star-half-alt star-icon text-warning"></span><span class="fa fa-star text-300"></span></td>
+                      <td class="align-middle review" style="min-width:350px;">
+                        <p class="fs--1 fw-semi-bold text-1000 mb-0">This theme is great. Clean and easy to understand. Perfect for those who don't have time to start everything from scratch. The support...<a href='#!'>See more</a></p>
+                      </td>
+                      <td class="align-middle text-start ps-5 status"><span class="badge fs--1 badge-light-success">Approved<span class="ms-2 fas fa-check"></span></span></td>
+                      <td class="align-middle text-end time white-space-nowrap">
+                        <div class="hover-hide">
+                          <h6 class="text-1000 mb-0">Nov 03, 10:43 AM</h6>
+                        </div>
+                      </td>
+                      <td class="align-middle white-space-nowrap text-end pe-0">
+                        <div class="position-relative">
+                          <div class="hover-actions"><button class="btn btn-sm btn-phoenix-secondary me-1 fs--2"><span class="fas fa-check"></span></button><button class="btn btn-sm btn-phoenix-secondary fs--2"><span class="fas fa-trash"></span></button></div>
+                        </div>
+                        <div class="font-sans-serif btn-reveal-trigger"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs--2" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs--2"></span></button>
+                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row align-items-center py-1">
+                <div class="pagination d-none"></div>
+                <div class="col d-flex fs--1">
+                  <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="data-list-info"></p><a class="fw-semi-bold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a><a class="fw-semi-bold d-none" href="#!" data-list-view="less">View Less</a>
+                </div>
+                <div class="col-auto d-flex">
+                  <button class="btn btn-link px-1 me-1" type="button" title="Previous" data-list-pagination="prev"><span class="fas fa-chevron-left me-2"></span>Previous</button><button class="btn btn-link px-1 ms-1" type="button" title="Next" data-list-pagination="next">Next<span class="fas fa-chevron-right ms-2"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-6">
+            <div class="col-12 col-xl-6">
+              <div class="mb-5 mt-7">
+                <h3>Top regions by revenue</h3>
+                <p class="text-700">Where you generated most of the revenue</p>
+              </div>
+              <div class="table-responsive scrollbar">
+                <table class="table fs--2 mb-0">
+                  <thead>
+                    <tr>
+                      <th class="border-top border-200 ps-0 align-middle" scope="col" style="width:32%">COUNTRY</th>
+                      <th class="border-top border-200 align-middle" scope="col" style="width:17%">USERS</th>
+                      <th class="border-top border-200 text-end align-middle" scope="col" style="width:16%">TRANSACTIONS</th>
+                      <th class="border-top border-200 text-end align-middle" scope="col" style="width:20%">REVENUE</th>
+                      <th class="border-top border-200 text-end pe-0 align-middle" scope="col" style="width:17%">CONV. RATE</th>
+                    </tr>
+                  </thead>
+                  <tbody class="list">
+                    <tr>
+                      <td></td>
+                      <td class="align-middle py-4">
+                        <h4 class="mb-0 fw-normal">377,620</h4>
+                      </td>
+                      <td class="align-middle text-end py-4">
+                        <h4 class="mb-0 fw-normal">236</h4>
+                      </td>
+                      <td class="align-middle text-end py-4">
+                        <h4 class="mb-0 fw-normal">$15,758</h4>
+                      </td>
+                      <td class="align-middle text-end py-4 pe-0">
+                        <h4 class="mb-0 fw-normal">10.32%</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap ps-0" style="width:32%">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 me-3">1. </h6><a href="#!">
+                            <div class="d-flex align-items-center"><img src="assets/img/country/india.png" alt="" width="24" />
+                              <p class="mb-0 ps-3 text-primary fw-bold fs--1">India</p>
+                            </div>
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle" style="width:17%">
+                        <h6 class="mb-0">92896<span class="text-700 fw-semi-bold ms-2">(41.6%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">67<span class="text-700 fw-semi-bold ms-2">(34.3%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">$7560<span class="text-700 fw-semi-bold ms-2">(36.9%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end pe-0" style="width:17%">
+                        <h6>14.01%</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap ps-0" style="width:32%">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 me-3">2. </h6><a href="#!">
+                            <div class="d-flex align-items-center"><img src="assets/img/country/china.png" alt="" width="24" />
+                              <p class="mb-0 ps-3 text-primary fw-bold fs--1">China</p>
+                            </div>
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle" style="width:17%">
+                        <h6 class="mb-0">50496<span class="text-700 fw-semi-bold ms-2">(32.8%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">54<span class="text-700 fw-semi-bold ms-2">(23.8%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">$6532<span class="text-700 fw-semi-bold ms-2">(26.5%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end pe-0" style="width:17%">
+                        <h6>23.56%</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap ps-0" style="width:32%">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 me-3">3. </h6><a href="#!">
+                            <div class="d-flex align-items-center"><img src="assets/img/country/usa.png" alt="" width="24" />
+                              <p class="mb-0 ps-3 text-primary fw-bold fs--1">USA</p>
+                            </div>
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle" style="width:17%">
+                        <h6 class="mb-0">45679<span class="text-700 fw-semi-bold ms-2">(24.3%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">35<span class="text-700 fw-semi-bold ms-2">(19.7%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">$5432<span class="text-700 fw-semi-bold ms-2">(16.9%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end pe-0" style="width:17%">
+                        <h6>10.23%</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap ps-0" style="width:32%">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 me-3">4. </h6><a href="#!">
+                            <div class="d-flex align-items-center"><img src="assets/img/country/south-korea.png" alt="" width="24" />
+                              <p class="mb-0 ps-3 text-primary fw-bold fs--1">South Korea</p>
+                            </div>
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle" style="width:17%">
+                        <h6 class="mb-0">36453<span class="text-700 fw-semi-bold ms-2">(19.7%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">22<span class="text-700 fw-semi-bold ms-2">(9.54%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">$4673<span class="text-700 fw-semi-bold ms-2">(11.6%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end pe-0" style="width:17%">
+                        <h6>8.85%</h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap ps-0" style="width:32%">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 me-3">5. </h6><a href="#!">
+                            <div class="d-flex align-items-center"><img src="assets/img/country/vietnam.png" alt="" width="24" />
+                              <p class="mb-0 ps-3 text-primary fw-bold fs--1">Vietnam</p>
+                            </div>
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle" style="width:17%">
+                        <h6 class="mb-0">15007<span class="text-700 fw-semi-bold ms-2">(11.9%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">17<span class="text-700 fw-semi-bold ms-2">(6.91%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end" style="width:17%">
+                        <h6 class="mb-0">$2456<span class="text-700 fw-semi-bold ms-2">(10.2%)</span></h6>
+                      </td>
+                      <td class="align-middle text-end pe-0" style="width:17%">
+                        <h6>6.01%</h6>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="d-flex align-items-center justify-content-between py-2 fs--1 mb-1">
+                <p class="mb-0 d-none d-sm-block me-3 fw-semi-bold text-900" data-list-info="">1 to 5 <span class="text-600"> Items of </span> 15</p><a class="fw-semi-bold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-2" data-fa-transform="down-1"></span></a>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="mx-n4 mx-lg-n6 ms-xl-0 h-100">
+                <div class="h-100 w-100">
+                  <div class="h-100 bg-white" id="map" style="min-height: 300px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-white pt-6 pb-9 border-top border-300">
+            <div class="row g-6">
+              <div class="col-12 col-xl-6">
+                <div class="me-xl-4">
+                  <div>
+                    <h3>Projection vs actual</h3>
+                    <p class="mb-1 text-700">Actual earnings vs projected earnings</p>
+                  </div>
+                  <div class="echart-projection-actual" style="height:300px; width:100%"></div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6">
+                <div>
+                  <h3>Returning customer rate</h3>
+                  <p class="mb-1 text-700">Rate of customers returning to your shop over time</p>
+                </div>
+                <div class="echart-returning-customer" style="height:300px;"></div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer position-absolute">
+            <div class="row g-0 justify-content-between align-items-center h-100 mb-3">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 mt-2 mt-sm-0 text-900">Thank you for creating with Phoenix<span class="d-none d-sm-inline-block"></span><span class="mx-1">|</span><br class="d-sm-none" />2022 &copy; <a href="https://themewagon.com/">Themewagon</a></p>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">v1.3.0</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/anchorjs/anchor.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="../../../polyfill.io/v3/polyfill.min58be.js?features=window.scroll"></script>
+    <script src="vendors/list.js/list.min.js"></script>
+    <script src="vendors/feather-icons/feather.min.js"></script>
+    <script src="vendors/dayjs/dayjs.min.js"></script>
+    <script src="assets/js/phoenix.js"></script>
+    <script src="vendors/echarts/echarts.min.js"></script>
+    <script src="vendors/chart/chart.min.js"></script>
+    <script src="vendors/list.js/list.min.js"></script>
+    <script src="vendors/leaflet/leaflet.js"></script>
+    <script src="vendors/leaflet.markercluster/leaflet.markercluster.js"></script>
+    <script src="vendors/leaflet.tilelayer.colorfilter/leaflet-tilelayer-colorfilter.min.js"></script>
+    <script src="assets/js/ecommerce-dashboard.js"></script>
+  </body>
+
+
+<!-- Mirrored from prium.github.io/phoenix/v1.3.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2022 11:56:05 GMT -->
+</html>
