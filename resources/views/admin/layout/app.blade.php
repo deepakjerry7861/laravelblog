@@ -25,7 +25,6 @@
     <link href="{{url('assets/admin')}}/assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
     <link href="{{url('assets/admin')}}/assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
     <link href="{{url('assets/admin/assets')}}/vendors/dhtmlx-gantt/dhtmlxgantt.css" rel="stylesheet">
-    <link href="{{url('assets/admin/assets')}}/vendors/dropzone/dropzone.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"/>
      <script src="https://cdn.tiny.cloud/1/eqcx2eeqhiowb24mb8ff34huvw6o1y5avpmkm1i4iey10b0g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
@@ -751,7 +750,6 @@
     <script src="{{url('assets/admin/assets')}}/vendors/dayjs/dayjs.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/vendors/echarts/echarts.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/vendors/dhtmlx-gantt/dhtmlxgantt.js"></script>
-    <script src="{{url('assets/admin/assets')}}/vendors/dropzone/dropzone.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="{{url('assets/admin/assets')}}/js/projectmanagement-dashboard.js"></script>
     <script src="{{url('assets/admin/assets')}}/js/phoenix.js"></script>
@@ -764,9 +762,14 @@
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
     });
+
+var loadFile = function(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+
   </script>
   </body>
 
 
-<!-- Mirrored from prium.github.io/phoenix/v1.3.0/dashboard/project-management.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2022 11:56:16 GMT -->
 </html>
