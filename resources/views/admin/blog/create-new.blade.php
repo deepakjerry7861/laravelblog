@@ -8,7 +8,7 @@
             <div class="col-xl-9">
      
 
-              <form class="row g-3 mb-6" action="{{url('/admin/save-create-new-blog')}}" method="post">
+              <form class="row g-3 mb-6" action="{{url('/admin/save-create-new-blog')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="col-sm-6 col-md-8">
                   <div class="form-floating">
@@ -32,7 +32,7 @@
                 </div>
                  <div class="mb-3">
                   <label class="form-label"  >Upload Image</label>
-                 <input class="form-control @error('blogtitle') is-invalid @enderror" type="file"  name="featuredimage" id="file" onchange="loadFile(event)"  />
+                 <input class="form-control @error('blogtitle') is-invalid @enderror" type="file"  value="{{old('blogtitle')}}" name="featuredimage" id="file" onchange="loadFile(event)"  />
                  @error('featuredimage')
                   <p>This field Required 😡</p>
                     @enderror
