@@ -22,4 +22,8 @@ class AdminController extends Controller
     {
         return view('admin.blog.create-new');
     }
+    public function blog_list()
+    {
+        return view ('admin.blog.blog-list');
+    }
 }

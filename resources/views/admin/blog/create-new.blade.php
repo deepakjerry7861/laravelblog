@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                   <div class="form-floating"><select class="form-select" id="floatingSelectTask">
-                      <option selected="selected">uncategorized</option>
+                      <option selected="selected">Uncategorized</option>
                       <option value="1">Travel</option>
                        <option value="2">Technical</option>
                       <option value="3">Sports</option>
@@ -33,8 +33,7 @@
                     <textarea class="form-control col-sm-6 col-md-4" id="floatingProjectOverview" placeholder="Leave a comment here" style="height: 100px"></textarea>
                     </div>
                 </div>
-              
-                <div class="col-12 text-end">
+               <div class="col-12 text-end">
                   <div class="row g-3">
                     <div class="col-8"><button class="btn btn-lg btn-phoenix-primary px-5">Cancel</button></div>
                     <div class="col-4"><button class="btn btn-lg btn-primary w-100">Save</button></div>

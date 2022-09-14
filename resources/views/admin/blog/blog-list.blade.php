@@ -1,5 +1,5 @@
 @extends('admin/layout/app')
-@section('title', ' Create New Blog')
+@section('title', ' Blog List')
 @section('content')
         <div class="content">
           <nav class="mb-2" aria-label="breadcrumb">
@@ -14,7 +14,9 @@
               <div class="col-auto">
                 <h2 class="mb-0">Projects<span class="fw-normal text-700">(32)</span></h2>
               </div>
-              <div class="col-auto"><button class="btn btn-primary px-5"><i class="fa-solid fa-plus me-2"></i>Add new project</button></div>
+              <div class="col-auto">
+            <a class="btn btn-primary px-5" href="{{url('admin/create-new-blog')}}" role="button">Create New Blog</a>
+            </div>
             </div>
             <div class="row g- justify-content-between align-items-end mb-4">
               <div class="col-12 col-sm-auto">
@@ -52,30 +54,14 @@
                     <th class="sort align-middle ps-3" scope="col" data-sort="task" style="width:12%;">TASK</th>
                     <th class="sort align-middle ps-3" scope="col" data-sort="projectprogress" style="width:5%;">PROGRESS</th>
                     <th class="sort align-middle text-end" scope="col" data-sort="statuses" style="width:10%;">STATUS</th>
-                    <th class="sort align-middle text-end" scope="col" style="width:10%;"></th>
+                    <th class="sort align-middle text-end" scope="col" style="width:10%;">ACTION</th>
                   </tr>
                 </thead>
                 <tbody class="list" id="table-latest-review-body">
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Project Doughnut Dungeon</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/34.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/59.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/35.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/58.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <div class="avatar-name rounded-circle "><span>+2</span></div>
-                        </div>
-                      </div>
+                     3
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Nov 17, 2020</p>
@@ -104,14 +90,7 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Water resistant mosquito killer gun</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/1.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/2.png" alt="" />
-                        </div>
-                      </div>
+                      8
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Mar 08, 2021</p>
@@ -140,20 +119,8 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Execution of Micky the foul mousie</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/20.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <div class="avatar-name rounded-circle"><span>R</span></div>
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/35.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/58.png" alt="" />
-                        </div>
-                      </div>
+                      3
+        
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Nov 17, 2020</p>
@@ -182,18 +149,8 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Harnessing stupidity from Jerry</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/11.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/12.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/13.png" alt="" />
-                        </div>
-                      </div>
-                    </td>
+                        85
+                      </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Jan 01, 2016</p>
                     </td>
@@ -221,23 +178,7 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Making the Butterflies shoot each other dead</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/14.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/16.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/18.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/20.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <div class="avatar-name rounded-circle "><span>+3</span></div>
-                        </div>
-                      </div>
+                      22
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Dec 24, 2019</p>
@@ -266,14 +207,7 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">The chewing gum attack</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/31.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/33.png" alt="" />
-                        </div>
-                      </div>
+                     5
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Aug 4, 2018</p>
@@ -302,17 +236,7 @@
                   <tr class="position-static">
                     <td class="align-middle time white-space-nowrap ps-0 projectName py-4"><a class="text-decoration-none fw-bold fs-0" href="#">Olga Dies Dreaming by Xóchitl González</a></td>
                     <td class="align-middle white-space-nowrap assigness ps-3 py-4">
-                      <div class="avatar-group avatar-group-dense">
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/11.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/12.png" alt="" />
-                        </div>
-                        <div class="avatar avatar-s  rounded-circle">
-                          <img class="rounded-circle" src="../../assets/img/team/13.png" alt="" />
-                        </div>
-                      </div>
+                      85
                     </td>
                     <td class="align-middle white-space-nowrap start ps-3 py-4">
                       <p class="mb-0 fs--1 text-900">Jan 01, 2018</p>

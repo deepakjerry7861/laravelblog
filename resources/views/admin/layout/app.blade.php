@@ -146,16 +146,16 @@
                     </div>
                   </a>
                   <ul class="nav collapse parent" id="project-management">
-                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/create-new.html" data-bs-toggle="" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link" href="{{url('admin/create-new-blog')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Create new</span></div>
                       </a><!-- more inner pages-->
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-list-view.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Project list view</span></div>
+                    <li class="nav-item"><a class="nav-link" href="{{url('admin/blog-list')}}" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Blog list</span></div>
                       </a><!-- more inner pages-->
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-card-view.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Project card view</span></div>
+                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-list-view.html" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center"><span class="nav-link-text">Blog category</span></div>
                       </a><!-- more inner pages-->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../apps/project-management/todo-list.html" data-bs-toggle="" aria-expanded="false">
@@ -729,15 +729,7 @@
           </footer>
         </div>
       </div>
-    </main><!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
-
-
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
+    </main>
     <script src="{{url('assets/admin/assets')}}/vendors/popper/popper.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/vendors/bootstrap/bootstrap.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/vendors/anchorjs/anchor.min.js"></script>
@@ -753,6 +745,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="{{url('assets/admin/assets')}}/js/projectmanagement-dashboard.js"></script>
     <script src="{{url('assets/admin/assets')}}/js/phoenix.js"></script>
+    <!-- <script src="{{url('assets/admin/assets')}}/js/custom.js"></script> -->
     <script>
     tinymce.init({
       selector: 'textarea',

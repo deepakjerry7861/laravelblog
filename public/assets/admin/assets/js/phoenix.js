@@ -80,5 +80,64 @@
 
   docReady(detectorInit),docReady(toastInit),docReady(tooltipInit),docReady(featherIconsInit),docReady(basicEchartsInit),docReady(listInit),docReady(anchorJSInit),docReady(popoverInit),docReady(fromValidationInit),docReady(docComponentInit),docReady(swiperInit),docReady(productDetailsInit),docReady(ratingInit),docReady(quantityInit),docReady(dropzoneInit),docReady(choicesInit),docReady(tinymceInit),docReady(responsiveNavItemsInit),docReady(zeroRoadmapChartInit),docReady(flatpickrInit),docReady(iconCopiedInit),docReady(isotopeInit),docReady(bigPictureInit),docReady(countupInit),docReady(initMap),docReady(productsFilterInit),docReady(todoOffcanvasInit);
 
-}));
+
+
+
+
+
+const ul = document.querySelector("ul"),
+input = document.querySelector("input"),
+tagNumb = document.querySelector(".details span");
+
+let maxTags = 20,
+tags = ["coding", "nepal"];
+
+countTags();
+createTag();
+
+function countTags(){
+    input.focus();
+    tagNumb.innerText = maxTags - tags.length;
+}
+
+function createTag(){
+    ul.querySelectorAll("li").forEach(li => li.remove());
+    tags.slice().reverse().forEach(tag =>{
+        let liTag = `<li>${tag} <i class="uit uit-multiply" onclick="remove(this, '${tag}')"></i></li>`;
+        ul.insertAdjacentHTML("afterbegin", liTag);
+    });
+    countTags();
+}
+
+function remove(element, tag){
+    let index  = tags.indexOf(tag);
+    tags = [...tags.slice(0, index), ...tags.slice(index + 1)];
+    element.parentElement.remove();
+    countTags();
+}
+
+function addTag(e){
+    if(e.key == "Enter"){
+        let tag = e.target.value.replace(/\s+/g, ' ');
+        if(tag.length > 1 && !tags.includes(tag)){
+            if(tags.length < 20){
+                tag.split(',').forEach(tag => {
+                    tags.push(tag);
+                    createTag();
+                });
+            }
+        }
+        e.target.value = "";
+    }
+}
+
+input.addEventListener("keyup", addTag);
+
+const removeBtn = document.querySelector(".details button");
+removeBtn.addEventListener("click", () =>{
+    tags.length = 0;
+    ul.querySelectorAll("li").forEach(li => li.remove());
+    countTags();
+});
+
 //# sourceMappingURL=phoenix.js.map
