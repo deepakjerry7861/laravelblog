@@ -14,6 +14,7 @@
     <meta name="msapplication-TileImage" content="{{url('assets/admin')}}/assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
     <script src="{{url('assets/admin/assets')}}/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -24,6 +25,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="{{url('assets/admin')}}/assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
     <link href="{{url('assets/admin')}}/assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+
+    <link href="{{url('assets/admin')}}/assets/css/custom.css" type="text/css" rel="stylesheet" id="user-style-default">
+
+    <link href="{{url('assets/admin/assets')}}/vendors/dhtmlx-gantt/dhtmlxgantt.css" rel="stylesheet">
     <link href="{{url('assets/admin/assets')}}/vendors/dhtmlx-gantt/dhtmlxgantt.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"/>
      <script src="https://cdn.tiny.cloud/1/eqcx2eeqhiowb24mb8ff34huvw6o1y5avpmkm1i4iey10b0g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>

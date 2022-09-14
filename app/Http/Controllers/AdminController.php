@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Blog;
 
 class AdminController extends Controller
 {
@@ -25,5 +26,16 @@ class AdminController extends Controller
     public function blog_list()
     {
         return view ('admin.blog.blog-list');
+    }
+    public function save_create_new_blog(Request $request){
+       
+
+         $validated = $request->validate([
+        'blogtitle' => 'required',
+        'category' => 'required',
+        'featuredimage' => 'required',
+        'description' => 'required',
+    ]);
+        
     }
 }

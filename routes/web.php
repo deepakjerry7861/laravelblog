@@ -30,5 +30,8 @@ Route::get('services', [FrontendController::class, 'services']);
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/login', [AdminController::class, 'admin_login']);
 Route::get('/admin/register', [AdminController::class, 'sign_up']);
-Route::get('/admin/create-new-blog', [AdminController::class, 'create_new_blog']);
 Route::get('/admin/blog-list', [AdminController::class, 'blog_list']);
+
+Route::get('/admin/create-new-blog', [AdminController::class, 'create_new_blog']);
+Route::post('/admin/save-create-new-blog', [AdminController::class, 'save_create_new_blog']);
+
