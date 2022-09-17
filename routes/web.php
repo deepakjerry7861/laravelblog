@@ -31,6 +31,12 @@ Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/login', [AdminController::class, 'admin_login']);
 Route::get('/admin/register', [AdminController::class, 'sign_up']);
 Route::get('/admin/blog-list', [AdminController::class, 'blog_list']);
+Route::get('/admin/delete/{id}', [AdminController::class, 'blogDelete']);
+Route::get('/admin/edit/{id}', [AdminController::class, 'blogedit']);
+Route::post('admin/update/{id}', [AdminController::class, 'update']);
+
+
+
 
 Route::get('/admin/create-new-blog', [AdminController::class, 'create_new_blog']);
 Route::post('/admin/save-create-new-blog', [AdminController::class, 'save_create_new_blog']);

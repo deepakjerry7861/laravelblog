@@ -1,2 +1,6 @@
-config.width = 850;     // 850 pixels wide.
-config.width = '75%';   // CSS unit.
+.alert.alert-success.kingfont {
+    color: #fff;
+}
+.alert.alert-danger.kingfont {
+    color: #fff;
+}

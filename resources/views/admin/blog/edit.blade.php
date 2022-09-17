@@ -3,17 +3,18 @@
 @section('content')
         <div class="content">
           
-          <h2 class="mb-4">Create a new blog</h2>
+          <h2 class="mb-4">Edit blog</h2>
           <div class="row">
             <div class="col-xl-9">
      
 
-              <form class="row g-3 mb-6" action="{{url('/admin/save-create-new-blog')}}" method="post" enctype="multipart/form-data">
+        <form  action="/admin/update/{{$viewdata[0]->id; }}" method="post" enctype="multipart/form-data" class="row g-3 mb-6">
                 @csrf
+
                 <div class="col-sm-6 col-md-8">
                   <div class="form-floating">
-                    <input class="form-control @error('blogtitle') is-invalid @enderror" name="blogtitle" id="floatingInputGrid" 
-                    type="text" value="{{old('blogtitle')}}" placeholder="Blog title" />
+                    <input class="form-control" name="blogtitle"  id="floatingInputGrid" 
+                    type="text" value="{{ $viewdata[0]->blogtitle}} " placeholder="Blog title" />
                     @error('blogtitle')
                   <p>This field Required 😡</p>
                        @enderror     
@@ -22,37 +23,31 @@
                 <div class="col-sm-6 col-md-4">
                   <div class="form-floating">
                     <select class="form-select" name="category" id="floatingSelectTask">
-                      <option selected="selected">Uncategorized</option>
-                      <option value="Travel">Travel</option>
-                       <option value="Technical">Technical</option>
-                      <option value="Sports">Sports</option>
-                      <option value="Education">Education</option>
-                      <option value="Bollywood">Bollywood</option>
-                    </select><label for="floatingSelectTask">Category</label></div>
+                      <option value="{{ $viewdata[0]->category}} ">{{$viewdata[0]->category}}</option>
+                      </select>
+                    <label for="floatingSelectTask">Category</label>
+                  </div>
                 </div>
                  <div class="mb-3">
                   <label class="form-label"  >Upload Image</label>
-                 <input class="form-control @error('blogtitle') is-invalid @enderror" type="file"  value="{{old('blogtitle')}}" name="featuredimage" id="file" onchange="loadFile(event)"  />
-                 @error('featuredimage')
-                  <p>This field Required 😡</p>
-                    @enderror
-                 <p><img id="output" width="200" /></p>
+                 <input class="form-control" type="file"  value="{{ $viewdata[0]->featuredimage}}" name="featuredimage" 
+                 id="file" onchange="loadFile(event)"  />
+                 
+                 <img src="/featuredimage/{{ $viewdata[0]->featuredimage }}" height="100" width="100">
                 </div>
                 <div class="col-12 gy-6">
                   <div class="form-floating">
                     <label for="floatingProjectOverview">project overview</label>
-                    <textarea class="form-control col-sm-6 col-md-4 @error('description') is-invalid @enderror" 
+                    <textarea class="form-control col-sm-6 col-md-4" 
                     id="floatingProjectOverview" placeholder="Leave a comment here" style="height: 100px"  
-                    name="description"> </textarea>
-                     @error('description')
-                  <p>This field Required 😡</p>
-                    @enderror
+                    name="description"> {{ $viewdata[0]->description}}  </textarea>
+                     
                     </div>
                 </div>
                <div class="col-12 text-end">
                   <div class="row g-3">
                     <div class="col-8"><button type="submit" class="btn btn-lg btn-phoenix-primary px-5">Cancel</button></div>
-                    <div class="col-4"><button class="btn btn-lg btn-primary w-100">Publish</button></div>
+                    <div class="col-4"><button class="btn btn-lg btn-primary w-100">Update</button></div>
                   </div>
                 </div>
               </form>
