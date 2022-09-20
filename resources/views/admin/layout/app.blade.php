@@ -122,7 +122,7 @@
                         <div class="d-flex align-items-center"><span class="nav-link-text">Blog list</span></div>
                       </a><!-- more inner pages-->
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../apps/project-management/project-list-view.html" data-bs-toggle="" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link" href="{{url('admin/add-category')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Blog category</span></div>
                       </a><!-- more inner pages-->
                     </li>

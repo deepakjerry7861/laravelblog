@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\Category;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Response;
 
@@ -25,7 +26,8 @@ class AdminController extends Controller
     }
     public function create_new_blog()
     {
-        return view('admin.blog.create-new');
+        $category = DB::table('categories')->get();
+        return view('admin.blog.create-new',compact('category'));
     }
     public function blog_list()
     {
@@ -81,52 +83,59 @@ class AdminController extends Controller
    public function update(Request $request ,$id)
     {
          $request->validate([
-        'blogtitle' => 'required',
-        'category' => 'required',
-        'featuredimage' =>'mimes:jpeg,webp,jpg,png,gif|required|max:10000',
-        'description' => 'required',
-    ]);
+            'blogtitle' => 'required',
+            'category' => 'required',
+             'description' => 'required',
+        ]);
 
          $post = Blog::find($id);
 
-         if($featuredimage = $request->file('featuredimage')) {
-                        $destinationPath = 'featuredimage/';
-                        $profilepic = date('YmdHis') . "." . $featuredimage->getClientOriginalExtension();
-                        $featuredimage->move($destinationPath, $profilepic);
-                        $post['featuredimage'] = "$profilepic";
-                        }
-        else{
-            unset($post['featuredimage']);
-            }
+                if($featuredimage = $request->file('featuredimage')) 
+                {
+                    $destinationPath = 'featuredimage/';
+                    $profilepic = date('YmdHis') . "." . $featuredimage->getClientOriginalExtension();
+                    $featuredimage->move($destinationPath, $profilepic);
+                    $post['featuredimage'] = "$profilepic";
+                }
+                else{
+                    unset($post['profilepic']);
+                    }
         
-         $post->blogtitle = $request->blogtitle;
+        $post->blogtitle = $request->blogtitle;
         $post->category = $request->category;
         $post->description = $request->description;
         // $post->featuredimage = $request->featuredimage;
         $post->save(); 
 
-       //  $blogtitle = $request->input('blogtitle');
-       //  $category = $request->input('category');
-       //  $featuredimage = $request->input('featuredimage');
-       //  $description = $request->input('description');
-       // DB::update('update blogs set blogtitle=?, category= ?,featuredimage= ?,description= ? where id = ?',[$blogtitle,$category,$featuredimage,$description,$id]);
-
-
-        //  print_r($blogtitle);
-        //  echo'<br>';
-        // print_r($category);
-        //          echo'<br>';
-        // print_r($featuredimage);
-        //          echo'<br>';
-        // print_r($description);
-
-        // die();
 
 
       return redirect('/admin/blog-list')->with('status', 'Blogs has been Updated  🥳!');
 
     }
 
+    public function blogview($id)
+    {
 
+        
+        $blog=DB::select('select * from blogs where id = ?', [$id]);
+        return view('/admin/blog/blog-view',compact('blog'));
+
+    }
+
+    public function add_category(Category $category)
+    {
+          $category = DB::table('categories')->get();
+          return view('admin.blog.add-category',compact('category'));
+    }
+    public function save_category(Request $request)
+    {
+        
+            $category = new Category;
+            $category->category = $request->category;
+            $category->save();
+        return redirect('/admin/add-category')->with('status', 'Category  has been added  🥳!');
+
+
+    }
 
 }

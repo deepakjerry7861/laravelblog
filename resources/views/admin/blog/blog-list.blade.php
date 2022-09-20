@@ -62,7 +62,7 @@
                 <td ><button type="button" class="btn btn-outline-success">Active</button></td>
                 <td>
                   <a class="btn btn-primary" href="/admin/edit/{{$blogs->id }}" role="button">Edit</a>
-                  <a class="btn btn-warning" href="view/{{ $blogs->id }}" role="button">View</a>
+                  <a class="btn btn-warning" href="/admin/blog-view/{{ $blogs->id }}" role="button">View</a>
                   <a class="btn btn-danger" href="/admin/delete/{{ $blogs->id }}" role="button">Delete</a>
                   
 
@@ -72,14 +72,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-                <th>Action</th>
-            </tr>
+              
         </tfoot>
     </table>
             </div>

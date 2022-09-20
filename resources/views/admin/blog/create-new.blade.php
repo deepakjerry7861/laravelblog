@@ -22,13 +22,11 @@
                 <div class="col-sm-6 col-md-4">
                   <div class="form-floating">
                     <select class="form-select" name="category" id="floatingSelectTask">
-                      <option selected="selected">Uncategorized</option>
-                      <option value="Travel">Travel</option>
-                       <option value="Technical">Technical</option>
-                      <option value="Sports">Sports</option>
-                      <option value="Education">Education</option>
-                      <option value="Bollywood">Bollywood</option>
-                    </select><label for="floatingSelectTask">Category</label></div>
+                      @foreach($category as $cat)
+                        <option value="{{$cat->id}}">{{$cat->category}}</option>
+                      @endforeach
+                    </select>
+                    <label for="floatingSelectTask">Category</label></div>
                 </div>
                  <div class="mb-3">
                   <label class="form-label"  >Upload Image</label>
