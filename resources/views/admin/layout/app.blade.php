@@ -409,46 +409,46 @@
                   <div class="card bg-white position-relative border-0">
                     <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar" style="height: 20rem;">
                       <div class="row text-center align-items-center gx-0 gy-0">
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/behance.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/behance.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Behance</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/google-cloud.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/google-cloud.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Cloud</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/slack.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/slack.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Slack</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/github.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/github.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Github</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/bitbucket.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/bitbucket.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">BitBucket</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/google-drive.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/google-drive.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Drive</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/trello.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/trello.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Trello</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/figma.png" alt="" width="20" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/figma.png" alt="" width="20" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Figma</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/twitter.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/twitter.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Twitter</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/pinterest.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/pinterest.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Pinterest</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/linkedin.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/linkedin.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Linkedin</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/google-maps.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/google-maps.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Maps</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/google-photos.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/google-photos.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Photos</p>
                           </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="../assets/img/nav-icons/spotify.png" alt="" width="30" />
+                        <div class="col-4"><a class="d-block hover-bg-200 p-2 rounded-3 text-center text-decoration-none mb-3" href="#!" target="_blank"><img src="{{url('assets/admin')}}/assets/img/nav-icons/spotify.png" alt="" width="30" />
                             <p class="mb-0 text-black text-truncate fs--2 mt-1 pt-1">Spotify</p>
                           </a></div>
                       </div>
@@ -458,7 +458,7 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link lh-1 px-0 ms-5" id="navbarDropdownUser" href="#!" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="avatar avatar-l ">
-                    <img class="rounded-circle" src="{{url('assets/admin')}}/assets/img/team/57.png" alt="" />
+                    <img class="rounded-circle" src="{{asset('assets/admin')}}/assets/img/team/57.png" alt="" />
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end py-0 dropdown-profile shadow border border-300" aria-labelledby="navbarDropdownUser">
@@ -466,7 +466,7 @@
                     <div class="card-body p-0">
                       <div class="text-center pt-4 pb-3">
                         <div class="avatar avatar-xl ">
-                          <img class="rounded-circle" src="../assets/img/team/57.png" alt="" />
+                          <img class="rounded-circle" src="{{asset('assets/admin')}}/assets/img/team/57.png" alt="" />
                         </div>
                         <h6 class="mt-2">Jerry Seinfield</h6>
                       </div>
