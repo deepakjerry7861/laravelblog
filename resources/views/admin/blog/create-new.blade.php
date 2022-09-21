@@ -23,7 +23,7 @@
                   <div class="form-floating">
                     <select class="form-select" name="category" id="floatingSelectTask">
                       @foreach($category as $cat)
-                        <option value="{{$cat->id}}">{{$cat->category}}</option>
+                        <option value="{{$cat->category}}">{{$cat->category}}</option>
                       @endforeach
                     </select>
                     <label for="floatingSelectTask">Category</label></div>

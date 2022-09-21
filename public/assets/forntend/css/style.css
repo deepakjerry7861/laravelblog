@@ -111,7 +111,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 700;
 }
 
@@ -852,14 +852,14 @@ overlay search
 
 .slider-post-content {
   position: absolute;
-  bottom: 38px;
-  padding: 20px;
-  background: #fff;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  left: 0px;
-  right: 0px;
+    bottom: 112px;
+    padding: 2px;
+    background: #fff;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
 }
 
 @media (max-width: 400px) {
@@ -1433,3 +1433,10 @@ footer
   }
 }
 /*# sourceMappingURL=style.css.map */
+.slider-item-content {
+  position: relative;
+  float: left;
+  width: 563px;
+  height: 415px;
+   background-size: cover;
+}

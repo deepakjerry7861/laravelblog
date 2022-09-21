@@ -7,6 +7,7 @@ use App\Models\Blog;
 use App\Models\Category;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Response;
+use App\Http\Controllers\Str;
 
 use DB;
 
@@ -15,8 +16,9 @@ class FrontendController extends Controller
     //
     public function index()
     {
+          $post = Blog::orderBy("id", "desc")->get();
+        // $post = DB::table('blogs','ASC')->get();
 
-        $post = DB::table('blogs')->get();
 
         Return view('index',compact('post')); 
     }
@@ -38,5 +40,9 @@ class FrontendController extends Controller
     public function services()
     {
         return view('services');
+    }
+    public function kingurl(){
+        $mySlug = \Str::slug('It Solutions provide laravel examples my ..Deepak jery');
+        print_r($mySlug);
     }
 }

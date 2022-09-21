@@ -31,8 +31,8 @@
           </div>
          
 
-         <div class="table " style="">
-             <table id="example" class="table table-striped text-center " style="width:100%">
+         <div class=" container table " style="">
+             <table id="example" class="table table-striped text-center " >
         <thead>
             <tr>
               @php $i=1;@endphp

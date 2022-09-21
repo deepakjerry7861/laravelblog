@@ -20,9 +20,10 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('blogs', [FrontendController::class, 'blogs']);
 Route::get('contact', [FrontendController::class, 'contact']);
-Route::get('single-post', [FrontendController::class, 'single_post']);
+Route::get('blog', [FrontendController::class, 'single_post']);
 Route::get('about', [FrontendController::class, 'about']);
 Route::get('services', [FrontendController::class, 'services']);
+Route::get('kingurl', [FrontendController::class, 'kingurl']);
 
 
 /*Admin Route start here*/

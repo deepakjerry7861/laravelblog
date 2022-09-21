@@ -7,7 +7,7 @@ use App\Models\Blog;
 use App\Models\Category;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Response;
-
+use App\Http\Controllers\Str;
 use DB;
 
 class AdminController extends Controller
@@ -52,6 +52,9 @@ class AdminController extends Controller
     ]);
 
           $input = $request->all();
+           // $input->slug = \Str::slug($request->blogtitle);
+          $input['slug'] = \Str::slug($request->blogtitle);
+
         
         if ($featuredimage = $request->file('featuredimage')) {
             $destinationPath = 'featuredimage/';
