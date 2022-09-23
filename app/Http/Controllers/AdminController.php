@@ -29,13 +29,25 @@ class AdminController extends Controller
         $category = DB::table('categories')->get();
         return view('admin.blog.create-new',compact('category'));
     }
-    public function blog_list()
+
+
+
+
+
+    public function blog_list(Blog $blog)
     {
 
-          $allblogs = DB::table('blogs')->get();
 
+        $all = DB::table('blogs')->count();
+        $tranding = Blog::where('category','=','tranding')->count();
+        $bollywood = Blog::where('category','=','bollywood')->count();
+        $job = Blog::where('category','=','job')->count();
+        $hollywood = Blog::where('category','=','hollywood')->count();
+        $explore = Blog::where('category','=','explore')->count();
+         
+        $allblogs = DB::table('blogs')->get();
 
-    return view('admin.blog.blog-list',['allblogs'=>$allblogs]);
+    return view('admin.blog.blog-list',compact('allblogs','tranding','job','hollywood','bollywood','explore','all'));
 
         // return view('admin.blog.blog-list', compact('allblogs'));
     }
@@ -62,9 +74,15 @@ class AdminController extends Controller
             $featuredimage->move($destinationPath, $profilepic);
             $input['featuredimage'] = "$profilepic";
         }
-        Blog::create($input);
+         Blog::create($input);
 
-        return redirect('/admin/blog-list')->with('status', 'Congratulation 🥳 !! Blog Has Created .');
+        return redirect('/admin/blog-list')->with('status', 'Congratulation 🥳 !! Blog Has Been Created .');
+    }
+
+    public function status_update(Blog $Blog , Request $request)
+    {
+        Blog::where('id',$request->id)->update(['status'=>$request->status]);      
+        echo 1; exit;  
     }
 
 

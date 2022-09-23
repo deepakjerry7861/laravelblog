@@ -12,7 +12,7 @@ use App\Http\Controllers\AdminController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+*/ 
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -45,4 +45,9 @@ Route::post('/admin/save-create-new-blog', [AdminController::class, 'save_create
 Route::get('/admin/add-category', [AdminController::class, 'add_category']);
 Route::post('/admin/save-category', [AdminController::class, 'save_category']);
 Route::get('/admin/blog-view/{id}', [AdminController::class, 'blogview']);
+
+
+Route::get('/admin/status_update', [AdminController::class, 'status_update']);
+
+
 

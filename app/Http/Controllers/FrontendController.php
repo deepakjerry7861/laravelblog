@@ -16,7 +16,7 @@ class FrontendController extends Controller
     //
     public function index()
     {
-          $post = Blog::orderBy("id", "desc")->get();
+          $post = Blog::where('status','1')->orderBy('blogtitle','ASC')->take(10)->get();
         // $post = DB::table('blogs','ASC')->get();
 
 

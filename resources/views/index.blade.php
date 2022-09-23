@@ -20,7 +20,7 @@
 
 						<div class="slider-post-content">
 							<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{{ $element->category }}</span>
-					<h3 class="post-title mt-1"><a href="single-post/{{strtolower($element->category)}}/{{$element->slug}}">{{Str::limit($element->blogtitle,30)}}</a></h3>
+					<h3 class="post-title mt-1"><a href="blog/{{strtolower($element->category)}}/{{$element->slug}}">{{Str::limit($element->blogtitle,30)}}</a></h3>
 							<span class=" text-muted  text-capitalize">{{ date("d/M/Y", strtotime($element->created_at)) }}</span>
 						</div>
 	               </div>
