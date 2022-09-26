@@ -16,12 +16,10 @@ class FrontendController extends Controller
     //
     public function index()
     {
-          $post = Blog::where('status','1')->orderBy('blogtitle','ASC')->take(10)->get();
-        // $post = DB::table('blogs','ASC')->get();
-
-
+        $post = Blog::where('status','1')->orderBy('created_at','DESC')->take(110)->get();
         Return view('index',compact('post')); 
     }
+
     public function blogs()
     {
         return view ('blogs');
@@ -30,9 +28,20 @@ class FrontendController extends Controller
      {
         return view ('contact');
     }
-    public function single_post()
+    public function single_post($category, $slug)
     {
-        return view('single-post');
+         // print_r($slug);
+        // print_r($request);
+
+        $post= DB::select('select * from blogs where slug = ?', [$slug]);
+        return view('single-post',compact('post'));
+
+       
+return view('single-post',compact('slug'));
+
+    // $post = Blog::where('slug')->get();
+    // print_r($post);die();
+    // return view('single-post',compact('post'));
     }
     public function about(){
         return view('about');
@@ -41,8 +50,8 @@ class FrontendController extends Controller
     {
         return view('services');
     }
-    public function kingurl(){
-        $mySlug = \Str::slug('It Solutions provide laravel examples my ..Deepak jery');
-        print_r($mySlug);
-    }
+    // public function kingurl(){
+    //     $mySlug = \Str::slug('It Solutions provide laravel examples my ..Deepak jery');
+    //     print_r($mySlug);
+    // }
 }

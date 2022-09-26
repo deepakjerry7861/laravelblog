@@ -11,7 +11,7 @@
         @foreach ($blog as $blogs)
                 <div class="container-fluid">
                 <h3>{{ucfirst($blogs->blogtitle)}}</h3>
-                <p>{!! strip_tags($blogs->description)  !!}</p>
+                <p>{!! $blogs->description  !!}</p>
 
                 </div>
            
