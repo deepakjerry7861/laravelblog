@@ -16,13 +16,18 @@ class FrontendController extends Controller
     //
     public function index()
     {
-        $post = Blog::where('status','1')->orderBy('created_at','DESC')->take(110)->get();
-        Return view('index',compact('post')); 
+        $post = Blog::where('status','1')->orderBy('created_at','DESC')->take(5)->get();
+        $postall = Blog::where('status','1')->orderBy('created_at','ASC')->take(110)->get();
+
+        Return view('index',compact('post','postall')); 
     }
 
     public function blogs()
     {
-        return view ('blogs');
+       $postall = Blog::where('status','1')->orderBy('created_at','DESC')->take(110)->get();
+
+
+        return view ('blogs',compact('postall')); 
     }   
      public function contact()
      {
@@ -30,11 +35,14 @@ class FrontendController extends Controller
     }
     public function single_post($category, $slug)
     {
-         // print_r($slug);
-        // print_r($request);
+         $tranding = Blog::where('category','=','tranding')->count();
+        $bollywood = Blog::where('category','=','bollywood')->count();
+        $job = Blog::where('category','=','job')->count();
+        $hollywood = Blog::where('category','=','hollywood')->count();
+        $explore = Blog::where('category','=','explore')->count();
 
         $post= DB::select('select * from blogs where slug = ?', [$slug]);
-        return view('single-post',compact('post'));
+        return view('single-post',compact('post','hollywood','bollywood','tranding','job','explore'));
 
        
 return view('single-post',compact('slug'));

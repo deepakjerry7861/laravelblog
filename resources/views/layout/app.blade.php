@@ -53,7 +53,6 @@
                           
                       </li>
                       <li class="nav-item"><a href="{{url('/about')}}" class="nav-link">About</a></li>
-                      <li class="nav-item"><a href="{{url('/services')}}" class="nav-link">Services</a></li>
                      
                       <li class="nav-item dropdown">
                           <a  href="{{url('/blogs')}}" class="nav-link dropdown-toggle" id="navbarDropdown2">Blog </a>

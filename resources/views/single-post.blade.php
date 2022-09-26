@@ -82,20 +82,20 @@
 		<h4 class="text-center widget-title">Catgeories</h4>
 	 	<ul class="list-unstyled">
 		  <li class="align-items-center d-flex justify-content-between">
-		    <a href="#">Innovation</a>
-		    <span>14</span>
+		    <a href="#">Hollywood</a>
+		    <span>@php echo $hollywood;@endphp</span>
 		  </li>
 		  <li class="align-items-center d-flex justify-content-between">
-		    <a href="#">Software</a>
-		    <span>2</span>
+		    <a href="#">Bollywood</a>
+		    <span>@php echo $bollywood;@endphp</span>
 		  </li>
 		  <li class="align-items-center d-flex justify-content-between">
-		    <a href="#">Social</a>
-		    <span>10</span>
+		    <a href="#">Tranding</a>
+		    <span>@php echo $tranding;@endphp</span>
 		  </li>
 		  <li class="align-items-center d-flex justify-content-between">
-		    <a href="#">Trends</a>
-		    <span>5</span>
+		    <a href="#">Job</a>
+		    <span>@php echo $job;@endphp</span>
 		  </li>
 		</ul>
 	</div>
@@ -140,26 +140,11 @@
     <div class="post-body">
         <div class="entry-content">
             <p> {!!$slugdata->description  !!}</p>
-            <blockquote>
-                <i class="ti-quote-left mr-2"></i>A wise girls knows her limit to touch the sky.Repellat sapiente neque iusto praesentium adipisci.The question gave me an idea, so I answered quickly before Perry could say anything.<i class="ti-quote-right ml-2"></i>
-            </blockquote>
+          
 
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <img src="{{url('assets/forntend')}}/images/fashion/single-img1.png" alt="post-ads" class="img-fluid mr-4 w-100">
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <img src="{{url('assets/forntend')}}/images/fashion/single-img2.png" alt="post-ads" class="img-fluid mr-4 w-100">
-                </div>
-            </div>
-            <h3 class="mt-5 mb-3">Enjoying the view of summer</h3>
+          
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum delectus exercitationem 
-                natus quidem enim error suscipit. Iure cupiditate nobis quaerat consectetur! Vero aliquam, 
-                amet ipsum ullam reiciendis nostrum voluptate accusantium provident ut blanditiis incidunt. </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab ratione animi nobis in et consequatur 
-                earum modi repellendus, qui, non debitis pariatur tempora consequuntur!</p>
         </div>
         
         <div class="post-tags py-4">
@@ -179,10 +164,16 @@
             </div>
 
             <div class="list-posts-share">
-                <a target="_blank" rel="nofollow" href="#"><i class="ti-facebook"></i></a>
-                <a target="_blank" rel="nofollow" href="#"><i class="ti-twitter"></i></a>
+           <a target="_blank" href="http://twitter.com/share?text=
+
+           {{$slugdata->blogtitle }} ?>&url= {{$slugdata->slug }}">
+           	<img src="images/social/2.png" alt=""> Twitter</a>
+
+                <a target="_blank" rel="nofollow" href=""><i class="ti-facebook"></i></a>
+                <a target="_blank" rel="nofollow" href="http://twitter.com/share?text=
+				{{$slugdata->blogtitle }} ?>&url= {{$slugdata->slug }}"><i class="ti-twitter"></i></a>
                 <a target="_blank" rel="nofollow" href="#"><i class="ti-pinterest"></i></a>
-                <a target="_blank" rel="nofollow" href="#"><i class="ti-linkedin"></i></a>
+      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/sharing/share-offsite/?{{$slugdata->slug}} "><img src="images/social/1.png" alt=""> </a><i class="ti-linkedin"></i></a>
             </div>
         </div>
     </div>
@@ -220,7 +211,13 @@
         </a>
     </div>
 </nav>
-				<div class="related-posts-block mt-5">
+	{{-- 
+	@foreach($postulike as $samlike)
+@php
+print_r($samlike); @endphp
+
+	@endforeach --}}
+	<div class="related-posts-block mt-5">
     <h3 class="news-title mb-4 text-center">
        You May Also Like
     </h3>

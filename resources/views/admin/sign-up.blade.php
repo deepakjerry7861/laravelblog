@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="{{url('assets/admin')}}/assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{url('assets/admin')}}/assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/admin')}}/assets/img/favicons/favicon-16x16.png">
@@ -36,20 +37,33 @@
               <div class="text-center mb-7">
                 <h3>Sign Up</h3>
                 <p class="text-700">Create your account today</p>
-              </div><button class="btn btn-phoenix-secondary w-100 mb-3"><span class="fab fa-google text-danger me-2 fs--1"></span>Sign up with google</button><button class="btn btn-phoenix-secondary w-100"> <span class="fab fa-facebook text-primary me-2 fs--1"></span>Sign up with facebook</button>
-              <div class="position-relative mt-4">
+              </div>
+              
+              <form action="{{url('admin/registerdata_save')}}" method="post">
+                @csrf
+                <div class="mb-3 text-start"><label class="form-label" for="name">Name</label><input class="form-control" id="name" name="name" type="text" placeholder="Name" />
+                  @error('name')
+                  <p>This field Required 😡</p>
+                    @enderror</div>
+                <div class="mb-3 text-start"><label class="form-label" for="email">Email address</label><input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" />
+               @if ($errors->has('email'))
+                <span class="text-danger">{{ $errors->first('email') }}</span>
+                @endif
+              </div>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6"><label class="form-label" for="password">Password</label><input class="form-control form-icon-input" name="password" id="password" type="password" placeholder="Password" /></div>
+                  <div class="col-md-6"><label class="form-label" for="confirm_password">Confirm Password</label><input class="form-control form-icon-input" name="confirm_password" id="confirm_password" type="password" placeholder="Confirm Password" /></div>
+                  <span id='message'></span>
+                </div>
+                <div class="form-check mb-3"><input class="form-check-input" id="termsService" type="checkbox" /><label class="form-label fs--1 text-none" for="termsService">I accept the <a href="#!">terms </a>and <a href="#!">privacy policy</a></label></div>
+                <input type="submit" class="btn btn-primary w-100 mb-3" name="submit" value="Sign up" />
+                
+                <div class="text-center"><a class="fs--1 fw-bold" href="{{url('/admin/login')}}">Sign in to an existing account</a></div>
+                <div class="position-relative mt-4">
                 <hr class="bg-200" />
                 <div class="divider-content-center">or use email</div>
               </div>
-              <form>
-                <div class="mb-3 text-start"><label class="form-label" for="name">Name</label><input class="form-control" id="name" type="text" placeholder="Name" /></div>
-                <div class="mb-3 text-start"><label class="form-label" for="email">Email address</label><input class="form-control" id="email" type="email" placeholder="name@example.com" /></div>
-                <div class="row g-3 mb-3">
-                  <div class="col-md-6"><label class="form-label" for="password">Password</label><input class="form-control form-icon-input" type="password" placeholder="Password" /></div>
-                  <div class="col-md-6"><label class="form-label" for="confirm_password">Confirm Password</label><input class="form-control form-icon-input" type="password" placeholder="Confirm Password" /></div>
-                </div>
-                <div class="form-check mb-3"><input class="form-check-input" id="termsService" type="checkbox" /><label class="form-label fs--1 text-none" for="termsService">I accept the <a href="#!">terms </a>and <a href="#!">privacy policy</a></label></div><button class="btn btn-primary w-100 mb-3">Sign up</button>
-                <div class="text-center"><a class="fs--1 fw-bold" href="{{url('/admin/login')}}">Sign in to an existing account</a></div>
+              <button class="btn btn-phoenix-secondary w-100 mb-3"><span class="fab fa-google text-danger me-2 fs--1"></span>Sign up with google</button><button class="btn btn-phoenix-secondary w-100"> <span class="fab fa-facebook text-primary me-2 fs--1"></span>Sign up with facebook</button>
               </form>
             </div>
           </div>
@@ -67,5 +81,14 @@
     <script src="{{url('assets/admin/assets')}}/vendors/feather-icons/feather.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/vendors/dayjs/dayjs.min.js"></script>
     <script src="{{url('assets/admin/assets')}}/assets/js/phoenix.js"></script>
+    <script>
+      $('#password, #confirm_password').on('keyup', function () {
+  if ($('#password').val() == $('#confirm_password').val()) {
+    $('#message').html('Password Matched').css('color', 'green');
+  } else 
+    $('#message').html('Password Not Match').css('color', 'red');
+});
+
+    </script>
   </body>
 </html>

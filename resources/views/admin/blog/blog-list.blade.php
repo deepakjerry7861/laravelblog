@@ -4,11 +4,11 @@
 @section('content')
         <div class="content">
          
-                   @if (session('status'))
-                      <div class="alert alert-success kingfont">
-                       {{ session('status') }}
-                      </div>
-                    @endif
+        @if (session('status'))
+        <div class="alert alert-success kingfont">
+        {{ session('status') }}
+        </div>
+        @endif
                     @if (session('deletesms'))
                       <div class="alert alert-danger kingfont">
                        {{ session('deletesms') }}

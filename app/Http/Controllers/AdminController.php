@@ -17,21 +17,12 @@ class AdminController extends Controller
     {
         return view('admin/index');
     }
-    public function admin_login(){
-        return view('admin.sign-in');
-    }
-    public function sign_up()
-    {
-        return view('admin.sign-up');
-    }
+   
     public function create_new_blog()
     {
         $category = DB::table('categories')->get();
         return view('admin.blog.create-new',compact('category'));
     }
-
-
-
 
 
     public function blog_list(Blog $blog)
