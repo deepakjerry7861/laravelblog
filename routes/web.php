@@ -45,7 +45,7 @@ Route::get('/admin/status_update', [AdminController::class, 'status_update']);
 // Auth things going here
 
 Route::get('/admin/login', [AuthController::class, 'admin_login']);
-Route::get('/admin/loginvalidation', [AuthController::class, 'loginvalidation']);
+Route::post('/admin/loginvalidation', [AuthController::class, 'loginvalidation']);
 Route::get('/admin/register', [AuthController::class, 'sign_up']);
 Route::post('/admin/registerdata_save',[AuthController::class,'registerdata_save']);
 

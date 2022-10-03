@@ -3,17 +3,44 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Hash;
+use DB;
+use Session;
 
 class AuthController extends Controller
 {
-    public function admin_login(){
+    public function admin_login(Request $request){
+       
         return view('admin.sign-in');
-    }
-    public function loginvalidation(Request $request)
-    {
 
-        return($request);
     }
+
+    
+
+public function loginvalidation(Request $request)
+    {
+        $request->validate([
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+
+        $email = $request->email;
+        $password = $request->password;      
+
+         if(Auth::attempt(['email' => $email, 'password' => $password,'status'=>'1']))
+
+         {
+            return redirect()->intended('admin')
+                        ->withSuccess('You have Successfully loggedin');
+         }
+  
+     return redirect()->back()->with('message', 'Oppes! You have entered invalid credentials');
+    }
+
+
+
+
     public function sign_up()
     {
         return view('admin.sign-up');
@@ -26,12 +53,13 @@ class AuthController extends Controller
         'name' => 'required|max:255',
         'email' => 'required|email|unique:users',
         'password' => 'required|min:5',
+
     ]);
 
         $user = new User ;
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = $request->password;
+        $user->password = Hash::make($request->password);
         $user->save();
         return redirect('/admin/login')->with('status', 'Account 
         created Successfully   🥳!');
