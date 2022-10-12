@@ -9,14 +9,22 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Str;
 use DB;
-
+use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     
     public function index()
     {
-        return view('admin/index');
+        if(Auth::check())
+        {
+            return view('admin/index');
+        }
+
+        return redirect("admin/login")->with('message', 'You are not allowed to access This is area!');
+
+        
     }
+   
    
     public function create_new_blog()
     {
@@ -57,6 +65,9 @@ class AdminController extends Controller
           $input = $request->all();
            // $input->slug = \Str::slug($request->blogtitle);
           $input['slug'] = \Str::slug($request->blogtitle);
+
+          $user = 'Admin';
+          $input['user_type'] = $user;
 
         
         if ($featuredimage = $request->file('featuredimage')) {

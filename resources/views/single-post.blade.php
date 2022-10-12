@@ -28,15 +28,17 @@
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar sidebar-right">
 					<div class="sidebar-wrap mt-5 mt-lg-0">
+	@foreach($post as $slugdata)
 	<div class="sidebar-widget about mb-5 text-center p-3">
 		<div class="about-author">
 			<img src="{{url('assets/forntend')}}/images/author.jpg" alt="" class="img-fluid">
 		</div>
-		<h4 class="mb-0 mt-4">Liam Mason</h4>
+		<h4 class="mb-0 mt-4">By {{'user_types'}}</h4>
 		<p>Travel Blogger</p>
 		<p>I'm Liam, last year I decided to quit my job and travel the world. You can follow my journey on this blog!</p>
 		<img src="{{url('assets/forntend')}}/images/liammason.png" alt="" class="img-fluid">
 	</div>
+	@endforeach
 
 	<div class="sidebar-widget follow mb-5 text-center">
 		<h4 class="text-center widget-title">Follow Me</h4>
@@ -130,7 +132,7 @@
         </h2>
 
         <div class="post-meta">
-            <span class="text-uppercase font-sm letter-spacing-1 mr-3">by Liam</span>
+            <span class="text-uppercase font-sm letter-spacing-1 mr-3">by {{$slugdata->user_type}}</span>
             <span class="text-uppercase font-sm letter-spacing-1">Date {{ date("d/M/Y", strtotime($slugdata->created_at)) }} </span>
         </div>
         <div class="post-featured-image mt-5">

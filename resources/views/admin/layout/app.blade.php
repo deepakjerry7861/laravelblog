@@ -371,7 +371,8 @@
                 </li>
               </ul>
             </div>
-            <div class="navbar-vertical-footer"><a class="btn btn-link border-0 fw-semi-bold d-flex ps-0" href="../pages/authentication/simple/sign-out.html"><span class="navbar-vertical-footer-icon" data-feather="log-out"></span><span>Sign out</span></a></div>
+            <div class="navbar-vertical-footer"><a class="btn btn-link border-0 fw-semi-bold d-flex ps-0" href="{{url('admin/logout')}}">
+                <span class="navbar-vertical-footer-icon" data-feather="log-out"></span><span>Sign out</span></a></div>
           </div>
         </nav>
         <nav class="navbar navbar-light navbar-top navbar-expand vertical-navbar">
@@ -496,7 +497,7 @@
 
 
 
-                        btn-phoenix-secondary d-flex flex-center w-100" href="#!"> <span class="me-2" data-feather="log-out"> </span>Sign out</a></div>
+                        btn-phoenix-secondary d-flex flex-center w-100" href="{{url('admin/logout')}}"> <span class="me-2" data-feather="log-out"> </span>Sign out</a></div>
                       <div class="my-2 text-center fw-bold fs--2 text-600"><a class="text-600 me-1" href="#!">Privacy policy</a>&bull;<a class="text-600 mx-1" href="#!">Terms</a>&bull;<a class="text-600 ms-1" href="#!">Cookies</a></div>
                     </div>
                   </div>

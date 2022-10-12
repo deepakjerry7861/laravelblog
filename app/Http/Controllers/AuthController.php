@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Hash;
 use DB;
+use Redirect;
 use Session;
 
 class AuthController extends Controller
@@ -28,14 +29,20 @@ public function loginvalidation(Request $request)
         $email = $request->email;
         $password = $request->password;      
 
-         if(Auth::attempt(['email' => $email, 'password' => $password,'status'=>'1']))
+         if(Auth::attempt(['email' => $email, 'password' => $password,'status'=>'1','user_type'=>'admin']))
 
          {
             return redirect()->intended('admin')
                         ->withSuccess('You have Successfully loggedin');
          }
+
+
+
+
+
+         
   
-     return redirect()->back()->with('message', 'Oppes! You have entered invalid credentials');
+         return redirect()->back()->with('message', 'Opps! You have entered invalid credentials');
     }
 
 
@@ -66,6 +73,19 @@ public function loginvalidation(Request $request)
 
     }
 
+   public function logout(Request $request)
+{
+    Auth::logout();
+    Session::flush();
+ 
+    $request->session()->invalidate();
+ 
+    $request->session()->regenerateToken();
+ 
+    // return redirect('admin/login');
+     return Redirect::back()->with('message','admin/login');
+
+}
 
 
 
