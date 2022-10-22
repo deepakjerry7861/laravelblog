@@ -22,6 +22,7 @@ class CreateBlogsTable extends Migration
             $table->text('description');
             $table->enum('status', ['0', '1'])->default('1');
              $table->string('posted_by');
+              $table->enum('user_type', ['Admin', 'User'])->default('Admin');
             $table->timestamps();
         });
     }

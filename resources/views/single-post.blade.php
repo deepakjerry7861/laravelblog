@@ -33,7 +33,7 @@
 		<div class="about-author">
 			<img src="{{url('assets/forntend')}}/images/author.jpg" alt="" class="img-fluid">
 		</div>
-		<h4 class="mb-0 mt-4">By {{'user_types'}}</h4>
+		<h4 class="mb-0 mt-4">By {{$slugdata->user_type}}</h4>
 		<p>Travel Blogger</p>
 		<p>I'm Liam, last year I decided to quit my job and travel the world. You can follow my journey on this blog!</p>
 		<img src="{{url('assets/forntend')}}/images/liammason.png" alt="" class="img-fluid">
@@ -171,11 +171,16 @@
            {{$slugdata->blogtitle }} ?>&url= {{$slugdata->slug }}">
            	<img src="images/social/2.png" alt=""> Twitter</a>
 
-                <a target="_blank" rel="nofollow" href=""><i class="ti-facebook"></i></a>
+                <a target="_blank" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000/{{$slugdata->slug}}"><i class="ti-facebook"></i></a>
                 <a target="_blank" rel="nofollow" href="http://twitter.com/share?text=
 				{{$slugdata->blogtitle }} ?>&url= {{$slugdata->slug }}"><i class="ti-twitter"></i></a>
                 <a target="_blank" rel="nofollow" href="#"><i class="ti-pinterest"></i></a>
-      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/sharing/share-offsite/?{{$slugdata->slug}} "><img src="images/social/1.png" alt=""> </a><i class="ti-linkedin"></i></a>
+      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/shareArticle?url=http://127.0.0.1:8000/{{$slugdata->slug}}"><img src="images/social/1.png" alt=""> </a><i class="ti-linkedin"></i></a>
+
+
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000/{{$slugdata->slug}}">
+    Facebook
+</a>
             </div>
         </div>
     </div>

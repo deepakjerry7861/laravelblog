@@ -28,6 +28,7 @@ class AdminController extends Controller
    
     public function create_new_blog()
     {
+       
         $category = DB::table('categories')->get();
         return view('admin.blog.create-new',compact('category'));
     }
